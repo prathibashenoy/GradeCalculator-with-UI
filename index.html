@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Grade Calculator</h2>
+        <form id="gradeForm">
+            <input type="text" id="name" placeholder="Enter student name">
+            <div class="error" id="nameError"></div>
+            <input type="number" id="score" placeholder="Enter score (0-100)" min="0" max="100">
+            <div class="error" id="scoreError"></div>
+            <button type="submit">Calculate Grade</button>
+        </form>
+        <h1 id="result"></h1>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
